@@ -1,38 +1,178 @@
 .App {
   text-align: center;
+  height: 100%;
+  
+  
+}
+.welcome{
+font-size: 32px;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.movieList{
+  background-color: rgba(0, 0, 255, 0.699);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-name{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile-pic{
+  border-radius: 150px;
+  height: 100px;
+  width: 100px;
+}
+.movie-container{
+  background-color: white;
+  min-width: 320px;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  height: min-content;
+  margin: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.81);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.81);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.81);
+}
+.add-movie-form{
   display: flex;
   flex-direction: column;
+  
+  margin: 30px;
+}
+.add-movie-input{
+  margin: 20px;
+}
+.button{
+  height: 100px;
+  width: 100px;
+}
+
+
+.movie-poster{
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+}
+
+.movie-specs{
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.movie-rating{
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.movie-name{
+  font-size: 24px;
+  margin: 5px;
+  max-width: 80%;
+}
+
+.movie-summary{
+  margin-top: 0px;
+  margin: 10px;
+}
+
+
+
+.movieList{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.counter-container{
+  display: inline-flex;
+  gap: 15px;
+  margin: 10px;
+  padding: 20px;
+  padding-left: 0%;
+  margin-left: 0%;
+
+}
+
+.likes-dislikes:hover{
+  background-color: brown;
+}
+
+.movie-container:hover{
+  transition: all 0.5s;
+  transform: scale(1.05);
+}
+
+.movie-show-button{
+font-size: 15px;
+}
+
+.add-movie{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 40px;
+  margin-top: 20px;
+  
+  
+}
+.add-color{
+  height: 30px;
+  width: 300px;
+  
+}
+.add-color-container{
+  margin: 20px;
+  
+}
+.like-dislike{
+  margin: 0;
+}
+.NotFound{
+  height: 560px;
+  width: 1200px;
+}
+nav{
+ font-size: 28px;
+ display: flex;
+ gap: 25px;
+ margin: 20px;
+ 
+}
+
+.gamebox{
+  background-color: white;
+  color: black;
+  height: 8rem;
+  width: 8rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  align-items: center;
+  font-size: 8rem;
+  border: 1px solid black;
+  cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+
+  .board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min-content;
+
+
+    
   }
-}
+
+  .full-board{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+  }
